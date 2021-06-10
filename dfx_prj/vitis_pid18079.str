@@ -1,0 +1,115 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 18079
+License: Customer
+
+Current time: 	Wed Jun 09 16:41:04 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.4.0-74-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1920x1080
+Available screens: 2
+Available disk space: 107 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu/18:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/opt/xilinx/xrt/lib:/opt/Xilinx/Vivado/2020.2/bin/../lnx64/tools/dot/lib:/opt/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	ylxiao
+User home directory: /home/ylxiao
+User working directory: /home/ylxiao/ws_202/F210609_nestedDFX/dfx_prj
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2020.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /home/ylxiao/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /home/ylxiao/ws_202/F210609_nestedDFX/dfx_prj/prj/floorplan_static.vitis
+Vitis workspace log file location: /home/ylxiao/ws_202/F210609_nestedDFX/dfx_prj/prj/floorplan_static.vitis/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINXD_LICENSE_FILE: 2100@potato.cis.upenn.edu
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2020.2
+XILINX_SDK: /opt/Xilinx/Vitis/2020.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2020.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/home/ylxiao/ws_202/F210609_nestedDFX/dfx_prj/prj/floorplan_static.vitis/flooplan_static_wrapper.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+setTextField("hello", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("hello", "hello_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("hello_system", "hello_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project hello_system", "hello_system", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("Window", "hello", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Show view", "hello", "WorkbenchWindow", "MenuItem.SHOW_VIEW");
+selectTree("Vitis Serial Terminal", "Xilinx", "Show View", "ShowViewDialog", "Tree.ApplicationImpl");
+selectButton("Open", "Show View", "ShowViewDialog", "Button.OPEN");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectToolBarButton("Connect to serial port", "Vitis Serial Terminal", "SDKTerminalView", "ToolItem.CONNECT_TO_SERIAL");
+selectCombo("/dev/ttyUSB0", "Connect to serial port", "SerialConnectionDialog", "ComboViewer.PORT");
+selectButton("OK", "Connect to serial port", "SerialConnectionDialog", "Button.OK");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("hello", "hello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch on Hardware", "hello", "WorkbenchWindow", "MenuItem.1_LAUNCH_ON_HARDWARE");
+selectTreeTable("hello", "hello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("Run Configurations", "hello", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTab("Target Setup", "Run Configurations", "LaunchConfigurationsDialog", "CTabItem.TARGET_SETUP");
+selectCheckBox("Reset entire system", Boolean.FALSE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_ENTIRE_SYSTEM");
+selectCheckBox("Reset entire system", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_ENTIRE_SYSTEM");
+selectCheckBox("Reset entire system", Boolean.FALSE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_ENTIRE_SYSTEM");
+selectCheckBox("Reset APU", Boolean.TRUE, "Run Configurations", "LaunchConfigurationsDialog", "Button.RESET_APU");
+selectButton("Run", "Run Configurations", "LaunchConfigurationsDialog", "Button.RUN");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+activateView("Vitis Serial Terminal", "SDKTerminalView", "CTabItem.VITIS_SERIAL_TERMINAL");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+selectButton("Clear", "Vitis Serial Terminal", "SDKTerminalView", "Button.CLEAR");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("hello", "hello_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("1 Launch on Hardware", "hello", "WorkbenchWindow", "MenuItem.1_LAUNCH_ON_HARDWARE");
+selectButton("OK", "WARNING", "MessageDialogWithToggle", "Button.OK");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 6/9/21, 4:45:01 PM EDT
+// Elapsed time: 00:03:57
+
